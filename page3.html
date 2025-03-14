@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal video {
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Header -->
+      <header id="header">
+        <a class="logo">My Projects</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="index.html">Projects</a></li>
+          <li><a href="generic.html">About Me</a></li>
+          <li><a href="elements.html">Thesis</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/allan-jr-balanga-268305285/"
+              class="icon brands fa fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/Am.Balanga03"
+              class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/AllanMBalanga"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Posts -->
+        <section class="posts">
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Snake%20Game/main.py"
+                  >Snake Game</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/snake game - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source src="images/snake game - Trim.mp4" type="video/mp4" />
+              </video>
+            </a>
+            <p>
+              A classic Snake game built using Python's Turtle library and OOP.
+              The snake can move using arrow keys, and it can grow after
+              consuming food. The game resets upon collision with walls or its
+              own body, it also updates the current score and high scores
+              depending on the number of food taken. This is done by storing and
+              fetching the score in a text file.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Snake%20Game/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Pingpong/main.py"
+                  >Ping Pong Game</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/pingpong - cut early - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source
+                  src="images/pingpong - cut early - Trim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </a>
+            <p>
+              A Ping Pong game built using Python's Turtle library and OOP. The
+              movements of the paddles are W, A, S, D (left) and arrow keys
+              (right). The ball bounces back upon contact with a paddle or
+              either the top or bottom walls. The left and right walls does not
+              allow collisions, resulting in a score and resetting ball position
+              if a ball passess through.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Pingpong/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Crossing/main.py"
+                  >Crossing Turtle Game</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/turtle crossing - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source
+                  src="images/turtle crossing - Trim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </a>
+            <p>
+              A Crossing game built using Python's Turtle library and OOP. The
+              movement of the turtle is solely forward, by clicking W. If the
+              turtle collides with a car object, the game ends. If the turtle
+              successfully crosses the screen, it resets its position and
+              increases the level by 1, resulting in a faster car movement
+              adding more challenge to the game.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Crossing/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Turtle%20Race/main.py"
+                  >Turtle Race Betting</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/turtle bet - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source src="images/turtle bet - Trim.mp4" type="video/mp4" />
+              </video>
+            </a>
+            <p>
+              A racing game built using Python's Turtle library that asks the
+              user to pick for the color of the turtle (ROYGBIV) that they think
+              would win, Seven turtles having different colors and running at
+              random generated speeds. The game ends when a turtle reaches the
+              corner, displaying a message box to announce whether the user's
+              turtle won or not.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Turtle%20-%20Turtle%20Race/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <div class="pagination">
+            <!--<a href="#" class="previous">Prev</a>-->
+            <a href="index.html" class="page">1</a>
+            <a href="page2.html" class="page">2</a>
+            <a href="page3.html" class="page active">3</a>
+            <a href="index.html" class="next">Next</a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Footer -->
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt" style="padding: 2rem">
+            <h3>Address</h3>
+            <p>
+              Blk 4 Lot 1 Phase 6, Easterview Park Subdivision<br />
+              Guitnang Bayan I, San Mateo, Rizal
+            </p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Phone</h3>
+            <p><a>(+63) 915-013-5256</a></p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Email</h3>
+            <p><a>junjunbalanga@gmail.com</a></p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a href="#" class="icon brands alt fa fa-linkedin"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands alt fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>&copy; Untitled</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+      <span class="close">&times;</span>
+      <video id="modalVideo" controls autoplay></video>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      function openModal(videoSrc) {
+        const modal = document.getElementById("videoModal");
+        const modalVideo = document.getElementById("modalVideo");
+        modal.style.display = "block";
+        modalVideo.src = videoSrc;
+      }
+
+      document.querySelector(".close").onclick = function () {
+        const modal = document.getElementById("videoModal");
+        const modalVideo = document.getElementById("modalVideo");
+        modal.style.display = "none";
+        modalVideo.pause();
+        modalVideo.src = "";
+      };
+
+      window.onclick = function (event) {
+        const modal = document.getElementById("videoModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+          modalVideo.pause();
+          modalVideo.src = "";
+        }
+      };
+    </script>
+  </body>
+</html>

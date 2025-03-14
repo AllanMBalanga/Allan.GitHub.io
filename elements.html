@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Elements Reference - Massively by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal video {
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <a href="index.html" class="logo">Deeptruths</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li><a href="index.html">Projects</a></li>
+          <li><a href="generic.html">About Me</a></li>
+          <li class="active"><a href="elements.html">Thesis</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/allan-jr-balanga-268305285/"
+              class="icon brands fa fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/Am.Balanga03"
+              class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/AllanMBalanga"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Post -->
+        <section class="post featured">
+          <header>
+            <h2>
+              <a
+                >Web Based Application for Deepfake Detection<br />
+                through Implementation of <br />YOLOv8 and CNN-LSTM Models</a
+              >
+            </h2>
+          </header>
+          <a
+            class="image fit"
+            onclick="openModal('images/DEEPTRUTHS VID TEASER - Trim (online-video-cutter.com).mp4')"
+          >
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              style="width: 100%; height: auto"
+            >
+              <source
+                src="images/DEEPTRUTHS VID TEASER - Trim (online-video-cutter.com).mp4"
+                type="video/mp4"
+              />
+            </video>
+          </a>
+          <p>
+            The specific objectives of the study are the following: (1) To
+            create self-developed datasets consisting of fake and real
+            parameters of the face and voice content to train the algorithms,
+            using YOLOv8 and CNN-LSTM respectively, (2) To develop a
+            YOLOv8-based detection and classification of the face-part and audio
+            content of the individuals detecting the: (a) Fake Face-Part
+            (Unnatural Blinking, Facial Asymmetry, Blurring and Artifacts, and
+            Eye Movement), (b) Waveform and Mel Spectrogram, (3) To design and
+            develop a Graphical User Interface (GUI) that will show the details
+            that the system will detect and classify. It will contain a database
+            of information where it shows the screenshot of the deepfake
+            content, the date/time of the detection, the score of the detection
+            (image or audio; real or fake). Implement an email alert system for
+            notifications upon detecting deepfake content within the program and
+            GUI framework, (4) To perform tests and assessments, such as the
+            Confusion matrix, mAP, accuracy, precision, recall, and F1-score
+            that will be used to analyze the performance of the detection and
+            classification algorithms with the trained model, and the use of
+            observation for testing the effectiveness of the system, (5) To
+            compare DeepTruths with existing deepfake detectors for Video,
+            Image, and Audio detection, using statistical methods to evaluate
+            the accuracy in detecting manipulated media.
+          </p>
+          <p>
+            Original Datasets: Original Video. The dataset needed for the
+            original face of twenty individuals selected for the study came from
+            various social media, mainly from YouTube and Facebook. These social
+            media platforms provide a vast and diverse types of videos, which
+            allows for a wide range of facial features and expressions to be
+            represented in the dataset.The next step after the collection of
+            data for the selected individuals involves the extraction of video
+            clips, which only features or focuses the faces of studied
+            individuals. For this to happen, the videos were trimmed down to
+            twenty seconds each. This duration was chosen to balance the need
+            for capturing sufficient facial movements and expressions while
+            keeping the dataset size practical for analysis. The researchers,
+            meanwhile, filmed themselves to create data for training DeepTruths.
+            Using their own records, researchers could precisely control the
+            quality and consistency of the data, which is crucial for training
+            an effective and accurate deepfake detection model. This
+            self-filming approach allowed them to tailor the data collection
+            process to meet the specific needs of DeepTruths. They were able to
+            experiment with various scenarios and conditions that the model
+            might encounter. This data collection process ensures that
+            DeepTruths would be well-equipped to recognize and distinguish
+            between genuine and manipulated videos. Similar to the collection of
+            data for original video, the original audio involves the gathering
+            of separate original video firstly. While the researchers recorded
+            themselves speaking for a minute. Consistent clip length ensured
+            that the dataset was manageable and uniform, facilitating efficient
+            handling and training. After collection, videos were reduced to one
+            minute each. The videos were then converted into WAV format to use
+            for model training. To further enhance the speech and quality of the
+            audio for a more robust training, the researchers utilized Adobe
+            Podcast.Adobe Podcast is a tool known for its advanced audio
+            enhancement capabilities, which helped in refining the recorded
+            audio to ensure it was of the highest possible quality. This
+            enhancement process was critical for producing clear and
+            intelligible audio data, which is essential for training a robust
+            and reliable model. By leveraging these tools and methods, the
+            researchers ensured that their audio dataset was well-prepared for
+            effective and accurate model training.
+          </p>
+          <p>
+            Fake Datasets. Fake Video. Twenty-second segments of real videos
+            were collected from YouTube and Facebook. These platforms were
+            chosen due to their widespread use and the diversity of facial
+            expressions and appearances from the content. These segments were
+            saved in a dedicated folder for further processing. Similarly, to
+            serve as the base material for fake content, 20-second cut videos
+            were utilized from YouTube and Facebook platforms. While the
+            additional five 20 second videos were recorded by the researchers
+            themselves for the generation of deepfake of their own The
+            generation of deep fakes, however, introduced an ethical dimension
+            to the research. The tool used for manipulation, FaceFusion,
+            leverages deep learning models. While FaceFusion offers flexibility
+            and customization for face-swapping, the developers have openly
+            acknowledged the potential misuse of their technology. The
+            collection of audios for the study involves collecting the videos of
+            the twenty selected individuals for the study. These videos were
+            then trimmed down to 20 seconds while carefully selecting that the
+            individuals were the one solely making a speech. After trimming
+            comes the conversion of the video files (MP4) to MP3. These MP3
+            files were then uploaded in ElevenLabs, a web application that
+            creates natural-sounding speech synthesis using deep learning.
+          </p>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt" style="padding: 2rem">
+            <h3>Address</h3>
+            <p>
+              Blk 4 Lot 1 Phase 6, Easterview Park Subdivision<br />
+              Guitnang Bayan I, San Mateo, Rizal
+            </p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Phone</h3>
+            <p><a href="#">(+63) 915-013-5256</a></p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Email</h3>
+            <p><a href="#">junjunbalanga@gmail.com</a></p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a href="#" class="icon brands alt fa fa-linkedin"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands alt fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="icon brands alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>&copy; Untitled</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+      <span class="close">&times;</span>
+      <video id="modalVideo" controls autoplay></video>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      function openModal(videoSrc) {
+        const modal = document.getElementById("videoModal");
+        const modalVideo = document.getElementById("modalVideo");
+        modal.style.display = "block";
+        modalVideo.src = videoSrc;
+      }
+
+      document.querySelector(".close").onclick = function () {
+        const modal = document.getElementById("videoModal");
+        const modalVideo = document.getElementById("modalVideo");
+        modal.style.display = "none";
+        modalVideo.pause();
+        modalVideo.src = "";
+      };
+
+      window.onclick = function (event) {
+        const modal = document.getElementById("videoModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+          modalVideo.pause();
+          modalVideo.src = "";
+        }
+      };
+    </script>
+  </body>
+</html>

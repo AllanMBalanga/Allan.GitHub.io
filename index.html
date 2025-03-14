@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+      }
+
+      .modal video {
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+      <!-- Intro -->
+      <div id="intro">
+        <h1>
+          Allan Balanga's<br />
+          Portfolio
+        </h1>
+        <p>Aspiring Programmer</p>
+        <ul class="actions">
+          <li>
+            <a
+              href="#header"
+              class="button icon solid solo fa-arrow-down scrolly"
+              >Continue</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Header -->
+      <header id="header">
+        <a class="logo">My Projects</a>
+      </header>
+
+      <!-- Nav -->
+      <nav id="nav">
+        <ul class="links">
+          <li class="active"><a href="index.html">Projects</a></li>
+          <li><a href="generic.html">About Me</a></li>
+          <li><a href="elements.html">Thesis</a></li>
+        </ul>
+        <ul class="icons">
+          <li>
+            <a
+              href="https://www.linkedin.com/in/allan-jr-balanga-268305285/"
+              class="icon brands fa fa-linkedin"
+              ><span class="label">Linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/Am.Balanga03"
+              class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/AllanMBalanga"
+              class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <!-- Featured Post -->
+        <article class="post featured">
+          <header class="major">
+            <h2>
+              <a href="elements.html">Thesis Project</a>
+            </h2>
+            <p>
+              DeepTruths: Web Based Application for Deepfake Detection<br />
+              through Implementation of <br />YOLOv8 and CNN-LSTM Models
+            </p>
+          </header>
+          <a
+            class="image fit"
+            onclick="openModal('images/DEEPTRUTHS VID TEASER - Trim (online-video-cutter.com).mp4')"
+          >
+            <video
+              autoplay
+              loop
+              muted
+              playsinline
+              style="width: 100%; height: auto"
+            >
+              <source
+                src="images/DEEPTRUTHS VID TEASER - Trim (online-video-cutter.com).mp4"
+                type="video/mp4"
+              />
+            </video>
+          </a>
+          <ul class="actions special">
+            <li><a href="elements.html" class="button large">More</a></li>
+          </ul>
+        </article>
+
+        <!-- Posts -->
+        <section class="posts">
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Flask%20%26%20API%20-%20Blog/main.py"
+                  >Blog Website Using<br />
+                  Flask & API</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/Flask - API - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source src="images/Flask - API - Trim.mp4" type="video/mp4" />
+              </video>
+            </a>
+            <p>
+              An interactive blog website where every posts written is collected
+              from an API, with a feature that allows to send messages to the
+              creator through Telegram and Gmail.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Flask%20%26%20API%20-%20Blog/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Web%20Scraping%20(Selenium)%20%26%20smtplib%20-%20Lazada/main.py"
+                  >Automated Lazada Price<br />
+                  Tracker Using Selenium</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/web scraping - lazada - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source
+                  src="images/web scraping - lazada - Trim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </a>
+            <p>
+              Catches the changes in price of a particular item in Lazada
+              depending on the current item cost if it is less than or equal to
+              what the user wants. It then sends a message through Gmail if the
+              price has been met.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Web%20Scraping%20(Selenium)%20%26%20smtplib%20-%20Lazada/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Web%20Scraping%20(Selenium%20%26%20BeautifulSoup)%20-%20House%20Rents/main.py"
+                  >Automated Data Collector <br />
+                  Selenium & BeautifulSoup</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/web scraping - house rents - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source
+                  src="images/web scraping - house rents - Trim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </a>
+            <p>
+              A web scraping program that automates collecting rental property
+              details, including address, monthly price, and property link. The
+              gathered data is entered into a Google Form, automatically filling
+              in the appropriate fields and submitting the form for each
+              property. This process repeats until all data is successfully
+              submitted.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Web%20Scraping%20(Selenium%20%26%20BeautifulSoup)%20-%20House%20Rents/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Web%20Scraping%20(Selenium)%20-%20automatic%20clicker/main.py"
+                  >Automated Game Playing <br />
+                  Bot Using Selenium</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/Web scraping - autoclicker - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source
+                  src="images/Web scraping - autoclicker - Trim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </a>
+            <p>
+              An autoclicker robot that plays the game independently, which also
+              has the function to purchase the most expensive affordable upgrade
+              every five seconds.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/Web%20Scraping%20(Selenium)%20-%20automatic%20clicker/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/API%20%26%20JSON%20-%20weather%20msg/main.py"
+                  >API Weather<br />
+                  Forecast Teller
+                </a>
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/API - weather msg - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source
+                  src="images/API - weather msg - Trim.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </a>
+            <p>
+              A program that fethces weather data from an API, which analyzes
+              the collected data if it will be sunny or rainy in my city for the
+              day. The result is then sent as a message through Gmail.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/API%20%26%20JSON%20-%20weather%20msg/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <header>
+              <h2>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/smtplib%20%26%20API%20-%20iss%20position/main.py"
+                  >API ISS<br />
+                  Position Tracker</a
+                >
+              </h2>
+            </header>
+            <a
+              class="image fit"
+              onclick="openModal('images/API - ISS - Trim.mp4')"
+            >
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: auto"
+              >
+                <source src="images/API - ISS - Trim.mp4" type="video/mp4" />
+              </video>
+            </a>
+            <p>
+              An application that tracks whether the current position of the
+              International Space Station (ISS) is near or right above my home.
+              If it is, and it is night time, the program then automatically
+              sends a message through Gmail for me to look up.
+            </p>
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga/Portfolio/blob/main/smtplib%20%26%20API%20-%20iss%20position/main.py"
+                  class="button"
+                  >View Project</a
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <div class="pagination">
+            <!--<a href="#" class="previous">Prev</a>-->
+            <a href="index.html" class="page active">1</a>
+            <a href="page2.html" class="page">2</a>
+            <a href="page3.html" class="page">3</a>
+            <a href="page2.html" class="next">Next</a>
+          </div>
+        </footer>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <section class="split contact">
+          <section class="alt" style="padding: 2rem">
+            <h3>Address</h3>
+            <p>
+              Blk 4 Lot 1 Phase 6, Easterview Park Subdivision<br />
+              Guitnang Bayan I, San Mateo, Rizal
+            </p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Phone</h3>
+            <p><a>(+63) 915-013-5256</a></p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Email</h3>
+            <p><a>junjunbalanga@gmail.com</a></p>
+          </section>
+          <section style="padding: 2rem">
+            <h3>Social</h3>
+            <ul class="icons alt">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/allan-jr-balanga-268305285/"
+                  class="icon brands alt fa fa-linkedin"
+                  ><span class="label">Twitter</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/Am.Balanga03"
+                  class="icon brands alt fa-facebook-f"
+                  ><span class="label">Facebook</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/AllanMBalanga"
+                  class="icon brands alt fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+            </ul>
+          </section>
+        </section>
+      </footer>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        <ul>
+          <li>&copy; Untitled</li>
+          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+      <span class="close">&times;</span>
+      <video id="modalVideo" controls autoplay></video>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script>
+      function openModal(videoSrc) {
+        const modal = document.getElementById("videoModal");
+        const modalVideo = document.getElementById("modalVideo");
+        modal.style.display = "block";
+        modalVideo.src = videoSrc;
+      }
+
+      document.querySelector(".close").onclick = function () {
+        const modal = document.getElementById("videoModal");
+        const modalVideo = document.getElementById("modalVideo");
+        modal.style.display = "none";
+        modalVideo.pause();
+        modalVideo.src = "";
+      };
+
+      window.onclick = function (event) {
+        const modal = document.getElementById("videoModal");
+        if (event.target === modal) {
+          modal.style.display = "none";
+          modalVideo.pause();
+          modalVideo.src = "";
+        }
+      };
+    </script>
+  </body>
+</html>
