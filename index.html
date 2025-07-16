@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
         
@@ -480,13 +482,14 @@ body::before {
 
         
         /* Tech Stack */
+         /* Tech Stack */
         .tech-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
         }
-        
+
         .tech-item {
             background: var(--card-bg);
             border: 3px solid var(--border-color);
@@ -495,28 +498,60 @@ body::before {
             text-align: center;
             transition: transform 0.2s;
             box-shadow: 0 4px 8px var(--shadow);
+            animation: techStackMove 4s ease-in-out infinite;
+        }
+
+        .tech-item:nth-child(2n) {
+            animation-delay: 0.5s;
+        }
+
+        .tech-item:nth-child(3n) {
+            animation-delay: 1s;
+        }
+
+        .tech-item:nth-child(4n) {
+            animation-delay: 1.5s;
+        }
+
+        .tech-item:nth-child(5n) {
+            animation-delay: 2s;
+        }
+
+        .tech-item:nth-child(6n) {
+            animation-delay: 2.5s;
         }
         
         .tech-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px var(--shadow);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px var(--shadow);
+    filter: brightness(1.1);
+}
+
+        .tech-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain; /* Maintains aspect ratio */
+}
+
+        .tech-name {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: white;
         }
-        /* Add continuous movement to tech items */
-.tech-item {
-    animation: techStackMove 4s ease-in-out infinite;
-}
 
-.tech-item:nth-child(2n) {
-    animation-delay: 0.5s;
-}
-
-.tech-item:nth-child(3n) {
-    animation-delay: 1s;
-}
-
-.tech-item:nth-child(4n) {
-    animation-delay: 1.5s;
-}
+        .type-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: white;
+            font-weight: 500;
+        }
 
 @keyframes techStackMove {
     0%, 100% { 
@@ -884,22 +919,103 @@ body::before {
             color: var(--text-color);
         }
         /* Pokemon Type Colors */
-.electric { background: linear-gradient(135deg, #F7D02C, #FFE135); }
-.water { background: linear-gradient(135deg, #6890F0, #A8C8FF); }
-.grass { background: linear-gradient(135deg, #78C850, #A8E6A3); }
-.fire { background: linear-gradient(135deg, #F08030, #FFAA70); }
-.psychic { background: linear-gradient(135deg, #F85888, #FFB3CC); }
-.fighting { background: linear-gradient(135deg, #C03028, #E6655C); }
-.poison { background: linear-gradient(135deg, #A040A0, #C266C2); }
-.ground { background: linear-gradient(135deg, #E0C068, #F0D87A); }
-.flying { background: linear-gradient(135deg, #A890F0, #C2B3FF); }
-.bug { background: linear-gradient(135deg, #A8B820, #BCC93D); }
-.rock { background: linear-gradient(135deg, #B8A038, #D1C555); }
-.ghost { background: linear-gradient(135deg, #705898, #9A85B8); }
-.dragon { background: linear-gradient(135deg, #7038F8, #A085FF); }
-.dark { background: linear-gradient(135deg, #705848, #A08870); }
-.steel { background: linear-gradient(135deg, #B8B8D0, #D4D4E8); }
-.fairy { background: linear-gradient(135deg, #EE99AC, #F5B3C4); }
+/* Real Brand Colors */
+
+.python { 
+    background: linear-gradient(135deg, #3776ab, #ffd43b); 
+    border-color: #3776ab;
+}
+.python .tech-icon { color: #3776ab; }
+
+.sql { 
+    background: linear-gradient(135deg, #2774cc, #3ce7bc); 
+    border-color: #2740cc;
+}
+.sql .tech-icon { color: #CC2927; }
+
+.mysql { 
+    background: linear-gradient(135deg, #1c8a00, #e3f211); 
+    border-color: #085833;
+}
+.mysql .tech-icon { color: #00618A; }
+
+.postgresql { 
+    background: linear-gradient(135deg, #f004a9, #e9ace6); 
+    border-color: #5a1050;
+}
+.postgresql .tech-icon { color: #336791; }
+
+.sqlite { 
+    background: linear-gradient(135deg, #ee6f06, #f0c380); 
+    border-color: #462802;
+}
+.sqlite .tech-icon { color: #003B57; }
+
+.mongodb { 
+    background: linear-gradient(135deg, #eeb868, #eb7405); 
+    border-color: #7c0202;
+}
+.mongodb .tech-icon { color: #4DB33D; }
+
+.fastapi { 
+    background: linear-gradient(135deg, #ff0202, #e9db11); 
+    border-color: #f50404;
+}
+.fastapi .tech-icon { color: #009688; }
+
+.flask { 
+    background: linear-gradient(135deg, #b879ec, #f0bded); 
+    border-color: #a648d1;
+}
+.flask .tech-icon { color: #000000; }
+
+.sqlalchemy { 
+    background: linear-gradient(135deg, #ffffff, #424242); 
+    border-color: #757575;
+}
+.sqlalchemy .tech-icon { color: #D71F00; }
+
+.postman { 
+    background: linear-gradient(135deg, #ffffff, #FFA366); 
+    border-color: #e5d2bc;
+}
+.postman .tech-icon { color: #FF6C37; }
+
+.testing { 
+    background: linear-gradient(135deg, #eb8fcc, #f525d9); 
+    border-color: #da48c6;
+}
+.testing .tech-icon { color: #8E44AD; }
+
+.git { 
+    background: linear-gradient(135deg, #c2c2c2, #000000); 
+    border-color: #353030;
+}
+.git .tech-icon { color: #F05032; }
+
+.selenium { 
+    background: linear-gradient(135deg, #5ddf89, #7ED321); 
+    border-color: #43B02A;
+}
+.selenium .tech-icon { color: #43B02A; }
+
+.scraping { 
+    background: linear-gradient(135deg, #010829, #1a0283); 
+    border-color: #2E3440;
+}
+.scraping .tech-icon { color: #2E3440; }
+
+.restapi { 
+    background: linear-gradient(135deg, #6101fc, #c471e6); 
+    border-color: #000000;
+}
+.restapi .tech-icon { color: #0F172A; }
+
+.oop { 
+    background: linear-gradient(135deg, #ff3300, #ee8787); 
+    border-color: #6584e9;
+}
+.oop .tech-icon { color: #1E40AF; }
 
 .rock-badge { background: linear-gradient(45deg, #8B4513, #A0522D); }
 .fighting-badge { background: linear-gradient(45deg, #C03028, #E6655C); }
@@ -1004,15 +1120,6 @@ body::before {
     80% { 
         transform: translateY(-7px) scale(1.01);
     }
-}
-.type-badge {
-    font-size: 6px;
-    background: rgba(0,0,0,0.2);
-    padding: 2px 6px;
-    border-radius: 10px;
-    margin-top: 5px;
-    color: white;
-    text-transform: uppercase;
 }
 
 /* Pokemon Card Styling */
@@ -1259,109 +1366,111 @@ I'm Allan Balanga Jr.,  a passionate developer who recently graduated with a Bac
         </section>
         
         <!-- Tech Stack Section -->
-        <section id="tech" class="section">
+            <!-- Tech Stack Section -->
+    <section id="tech" class="section">
+        <div class="container">
             <h2>My Tech Stack</h2>
             <div class="tech-grid">
-    <!-- Programming Languages -->
-    <div class="tech-item electric">
-        <span class="tech-icon">⚡</span>
-        <div class="tech-name">Python</div>
-        <div class="type-badge">Electric</div>
-    </div>
-    
-    <!-- Databases -->
-    <div class="tech-item water">
-        <span class="tech-icon">🌊</span>
-        <div class="tech-name">SQL</div>
-        <div class="type-badge">Water</div>
-    </div>
-    
-    <div class="tech-item grass">
-        <span class="tech-icon">🌱</span>
-        <div class="tech-name">MySQL</div>
-        <div class="type-badge">Grass</div>
-    </div>
-    
-    <div class="tech-item psychic">
-        <span class="tech-icon">🔮</span>
-        <div class="tech-name">PostgreSQL</div>
-        <div class="type-badge">Psychic</div>
-    </div>
-    
-    <div class="tech-item rock">
-        <span class="tech-icon">🗿</span>
-        <div class="tech-name">SQLite</div>
-        <div class="type-badge">Rock</div>
-    </div>
-    
-    <!-- Web Frameworks -->
-    <div class="tech-item fire">
-        <span class="tech-icon">🔥</span>
-        <div class="tech-name">FastAPI</div>
-        <div class="type-badge">Fire</div>
-    </div>
-    
-    <div class="tech-item poison">
-        <span class="tech-icon">🧪</span>
-        <div class="tech-name">Flask</div>
-        <div class="type-badge">Poison</div>
-    </div>
-    
-    <!-- ORM & Database Tools -->
-    <div class="tech-item steel">
-        <span class="tech-icon">🔗</span>
-        <div class="tech-name">SQLAlchemy</div>
-        <div class="type-badge">Steel</div>
-    </div>
-    
-    <!-- Testing & API Tools -->
-    <div class="tech-item flying">
-        <span class="tech-icon">📡</span>
-        <div class="tech-name">Postman</div>
-        <div class="type-badge">Flying</div>
-    </div>
-    
-    <div class="tech-item fairy">
-        <span class="tech-icon">🧚</span>
-        <div class="tech-name">Unit Testing</div>
-        <div class="type-badge">Fairy</div>
-    </div>
-    
-    <!-- Version Control -->
-    <div class="tech-item dark">
-        <span class="tech-icon">🌙</span>
-        <div class="tech-name">Git</div>
-        <div class="type-badge">Dark</div>
-    </div>
-    
-    <!-- Automation & Web Scraping -->
-    <div class="tech-item bug">
-        <span class="tech-icon">🕷️</span>
-        <div class="tech-name">Selenium</div>
-        <div class="type-badge">Bug</div>
-    </div>
-    
-    <div class="tech-item ghost">
-        <span class="tech-icon">👻</span>
-        <div class="tech-name">Web Scraping</div>
-        <div class="type-badge">Ghost</div>
-    </div>
-    
-    <!-- APIs & Cloud -->
-    <div class="tech-item dragon">
-        <span class="tech-icon">🐉</span>
-        <div class="tech-name">REST API</div>
-        <div class="type-badge">Dragon</div>
-    </div>
-    
-    <!-- Programming Concepts -->
-    <div class="tech-item fighting">
-        <span class="tech-icon">👊</span>
-        <div class="tech-name">OOP</div>
-        <div class="type-badge">Fighting</div>
-    </div>
+                <div class="tech-item python">
+                    <img src="icons/python.png" class="tech-icon">
+                    <div class="tech-name">Python</div>
+                    <div class="type-badge">Electric</div>
+                </div>
+                
+                <div class="tech-item sql">
+                    <img src="icons/sql.png" class="tech-icon">
+                    <div class="tech-name">SQL</div>
+                    <div class="type-badge">Water</div>
+                </div>
+
+                <div class="tech-item mysql">
+                    <img src="icons/mysql.png" class="tech-icon">
+                    <div class="tech-name">MySQL</div>
+                    <div class="type-badge">Grass</div>
+                </div>
+
+                <div class="tech-item postgresql">
+                    <img src="icons/postgresql.png"  class="tech-icon">
+                    <div class="tech-name">PostgreSQL</div>
+                    <div class="type-badge">Psychic</div>
+                </div>
+
+                <div class="tech-item mongodb">
+                    <img src="icons/mongodb.png" class="tech-icon">
+                    <div class="tech-name">MongoDB</div>
+                    <div class="type-badge">Ground</div>
+                </div>
+
+                <div class="tech-item sqlite">
+                    <img src="icons/sqlite.png" class="tech-icon">
+                    <div class="tech-name">SQLite</div>
+                    <div class="type-badge">Rock</div>
+                </div>
+                
+                <div class="tech-item sqlalchemy">
+                    <i class="devicon-sqlalchemy-plain tech-icon"></i>
+                    <div class="tech-name">SQLAlchemy</div>
+                    <div class="type-badge">Steel</div>
+                </div>
+  
+                <div class="tech-item fastapi">
+                    <i class="devicon-fastapi-plain tech-icon"></i>
+                    <div class="tech-name">FastAPI</div>
+                    <div class="type-badge">Fire</div>
+                </div>
+                
+
+                <div class="tech-item flask">
+                    <i class="devicon-flask-original tech-icon"></i>
+                    <div class="tech-name">Flask</div>
+                    <div class="type-badge">Poison</div>
+                </div>
+                
+                <div class="tech-item postman">
+                    <img src="icons/postman.png" class="tech-icon">
+                    <div class="tech-name">Postman</div>
+                    <div class="type-badge">Flying</div>
+                </div>
+
+                <div class="tech-item git">
+                    <img src="icons/git.png" class="tech-icon">
+                    <div class="tech-name">Git</div>
+                    <div class="type-badge">Dark</div>
+                </div>
+
+                <div class="tech-item selenium">
+                    <img src="icons/selenium.png" class="tech-icon">
+                    <div class="tech-name">Selenium</div>
+                    <div class="type-badge">Bug</div>
+                </div>
+
+                <div class="tech-item oop">
+                    <img src="icons/oop.png" class="tech-icon">
+                    <div class="tech-name">OOP</div>
+                    <div class="type-badge">Fighting</div>
+                </div>
+                
+                <div class="tech-item restapi">
+                    <i class="devicon-googlecloud-plain tech-icon"></i>
+                    <div class="tech-name">REST API</div>
+                    <div class="type-badge">Dragon</div>
+                </div>
+
+                <div class="tech-item testing">
+                    <img src="icons/unit testing.png" class="tech-icon">
+                    <div class="tech-name">Unit Testing</div>
+                    <div class="type-badge">Fairy</div>
+                </div>
+
+                <div class="tech-item scraping">
+                    <img src="icons/web scraping.png" class="tech-icon">
+                    <div class="tech-name">Web Scraping</div>
+                    <div class="type-badge">Ghost</div>
+                </div>
+                
             </div>
-        </section>
+        </div>
+    </section>
         
         <!-- Projects Section -->
         <section id="projects" class="section">
