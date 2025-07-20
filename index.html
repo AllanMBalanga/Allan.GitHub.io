@@ -1312,7 +1312,7 @@ body::before {
                     <p>
 I'm Allan Balanga Jr.,  a passionate developer who recently graduated with a Bachelor of Science in Electronics Engineering from the Polytechnic University of the Philippines (Dean's List 2020-2023). My programming journey has been as exciting as catching Pokemon! I specialize in Python development, and I've found my sweet spot in backend development, where I get to build robust systems and automate processes that make life easier. </p>
                     <h3>What I build</h3>
-<p>I've built some cool stuff recently!I love crafting robust backend systems using Python, FastAPI, Flask, and databases like MySQL and PostgreSQL. My Shoe Shop Backend API was particularly meaningful - it was inspired by my father's small shoe business, so I got to solve real problems I've seen firsthand. I built it twice (ORM and raw SQL) to really understand what happens under the hood. I also created a Patient Admission System for hospitals with role-based security, ensuring doctors and patients only access their authorized data.</p>
+<p>I've built some cool stuff recently! I love crafting robust backend systems using Python, FastAPI, Flask, and databases like MySQL, MongoDB, and PostgreSQL. My Train Ticketing System was particularly impactful - I built it using MongoDB to eliminate traditional queueing systems and provide digital alternatives for commuters without beep cards, featuring role-based security and calculated fare pricing algorithms. I also created a Shoe Shop Backend API inspired by my father's small shoe business, so I got to solve real problems I've seen firsthand. I built it twice (ORM and raw SQL) to really understand what happens under the hood.</p>
 <h3>Always Learning</h3>
 <p>I'm a bit of a course junkie - I've been working through Harvard's CS50 series and completed the "100 Days of Code" Python bootcamp. Currently grinding through CS50's Introduction to Computer Science because, well, there's always more to learn! I even became a Postman API Fundamentals Student Expert, which sounds fancier than it is, but hey, I know my way around API testing now. Technology moves fast, and I love that there's always something new to figure out!</p>
                 </div>
@@ -1496,17 +1496,43 @@ I'm Allan Balanga Jr.,  a passionate developer who recently graduated with a Bac
 
                         <div class="project-card" data-category="backend">
                                 <div class="project-media">
-        <video
-            autoplay
-            loop
-            muted
-            playsinline
-            style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
-            onclick="openModal('images/ShoeShop DB API System (1).mp4')"
-        >
-            <source src="images/ShoeShop DB API System (1).mp4" type="video/mp4" />
-        </video>
-    </div>
+                                    <video
+                                        autoplay
+                                        loop
+                                        muted
+                                        playsinline
+                                        style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+                                        onclick="openModal('images/train ticketing.mp4')"
+                                    >
+                                        <source src="images/train ticketing.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Train Ticketing API System: Role-Based Backend Security (MongoDB)</h3>
+                                <p class="project-description">Developed a comprehensive NoSQL-based train ticketing system utilizing MongoDB architecture with FastAPI framework to eliminate 
+                                    traditional queueing systems and provide digital alternatives for commuters without beep cards. The system implements JWT role-based access control across 
+                                    seven collections with calculated fare pricing algorithms and balance-deduction payment processing. Technical implementation includes Pydantic validation, 
+                                    modular object-oriented programming structure, cascading deletion capabilities, MongoDB indexing optimization, and comprehensive HTTP status code management,
+                                     demonstrating advanced proficiency in NoSQL database design, role-specific API development, and scalable backend architecture for modernizing transportation infrastructure.
+                                    </p>
+                                <a href="https://github.com/AllanMBalanga/Train-Ticketing-System" class="github-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="project-card" data-category="backend">
+                                <div class="project-media">
+                                    <video
+                                        autoplay
+                                        loop
+                                        muted
+                                        playsinline
+                                        style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+                                        onclick="openModal('images/ShoeShop DB API System (1).mp4')"
+                                    >
+                                        <source src="images/ShoeShop DB API System (1).mp4" type="video/mp4" />
+                                    </video>
+                                </div>
                             <div class="project-content">
                                 <h3 class="project-title">Production-Ready E-commerce ShoeShop Backend System (PostgreSQL)</h3>
                                 <p class="project-description">Transformed a family business into a comprehensive REST API system, evolving from an academic project to a 
@@ -1521,17 +1547,17 @@ I'm Allan Balanga Jr.,  a passionate developer who recently graduated with a Bac
                         
                         <div class="project-card" data-category="backend">
                                 <div class="project-media">
-        <video
-            autoplay
-            loop
-            muted
-            playsinline
-            style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
-            onclick="openModal('images/Patient Admission DB API System (1).mp4')"
-        >
-            <source src="images/Patient Admission DB API System (1).mp4" type="video/mp4" />
-        </video>
-    </div>
+                                <video
+                                    autoplay
+                                    loop
+                                    muted
+                                    playsinline
+                                    style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+                                    onclick="openModal('images/Patient Admission DB API System (1).mp4')"
+                                >
+                                    <source src="images/Patient Admission DB API System (1).mp4" type="video/mp4" />
+                                </video>
+                            </div>
                             <div class="project-content">
                                 <h3 class="project-title">Healthcare Patient Admission System with Role-Based Security (MySQL)</h3>
                                 <p class="project-description">Architected a secure patient admission system using MySQL and raw SQL queries, implementing comprehensive role-based access control 
@@ -1544,6 +1570,27 @@ I'm Allan Balanga Jr.,  a passionate developer who recently graduated with a Bac
                             </div>
                         </div>
                         
+                        <div class="project-card" data-category="backend">
+                                <div class="project-media">
+                                    <video
+                                        autoplay
+                                        loop
+                                        muted
+                                        playsinline
+                                        style="width: 100%; height: 100%; object-fit: cover; cursor: pointer;"
+                                        onclick="openModal('images/airport booking.mp4')"
+                                    >
+                                        <source src="images/airport booking.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Airport Booking System: ORM Flight API (MySQL & SQLAlchemy)</h3>
+                                <p class="project-description">Engineered a comprehensive flight booking system utilizing MySQL database architecture with SQLAlchemy ORM implementation, featuring secure JWT authentication, bcrypt password hashing, and sophisticated relationship modeling across six interconnected tables. Technical implementation involved Pydantic data validation, enum-based flight management, constraint-based business logic, and nested data retrieval through SQLAlchemy relationship chaining. The project utilized Python with FastAPI framework, demonstrating advanced proficiency in ORM design patterns, relational database modeling, and production-ready backend architecture development.</p>
+                                <a href="https://github.com/AllanMBalanga/AirportBooking" class="github-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                            </div>
+                        </div>
+
+
 <div class="project-card" data-category="backend">
     <div class="project-media">
         <video
