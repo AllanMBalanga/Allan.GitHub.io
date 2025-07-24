@@ -22,7 +22,7 @@ I'm a passionate **backend developer** and a recent **Electronics Engineering gr
 `FastAPI` | `Flask` | `SQLAlchemy` | `Postman` | `Selenium` | `Git`
 
 **Databases:**  
-`MySQL` | `PostgreSQL` | `SQLite`
+`MySQL` | `PostgreSQL` | `MongoDB` | `SQLite`
 
 **Core Concepts:**  
 REST API Design | Object-Oriented Programming (OOP) | Web Scraping | Unit Testing
